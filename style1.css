@@ -1,0 +1,150 @@
+body {
+    padding-left: 6%;
+    padding-right: 6%
+
+}
+.test-card span {
+    padding: 5% 0 5% 2%;
+}
+
+.test-0 {
+    margin-top: 1%;
+}
+
+.test-num{
+    width: 20%;
+    height: 20%;
+    margin-left: -10%
+}
+
+.test-test-1 {
+    display: none;
+}
+
+.test-1-quest-btn-1 {
+    display: none;
+}
+
+.test-1-quest-btn-2 {
+    display: none;
+}
+
+.test-1-quest-btn-3 {
+    display: none;
+}
+
+.test-1-quest-num-2 {
+    display: none;
+}
+
+.test-1-quest-num-3 {
+    display: none;
+}
+
+
+.test-test-2 {
+    display: none;
+}
+
+.test-2-quest-btn-1 {
+    display: none;
+}
+
+.test-2-quest-btn-2 {
+    display: none;
+}
+
+.test-2-quest-btn-3 {
+    display: none;
+}
+
+.test-2-quest-num-2 {
+    display: none;
+}
+
+.test-2-quest-num-3 {
+    display: none;
+}
+
+
+.test-test-3 {
+    display: none;
+}
+
+.test-3-quest-btn-1 {
+    display: none;
+}
+
+.test-3-quest-btn-2 {
+    display: none;
+}
+
+.test-3-quest-btn-3 {
+    display: none;
+}
+
+.test-3-quest-num-2 {
+    display: none;
+}
+
+.test-3-quest-num-3 {
+    display: none;
+}
+
+
+.test-test-4 {
+    display: none;
+}
+
+.test-4-quest-btn-1 {
+    display: none;
+}
+
+.test-4-quest-btn-2 {
+    display: none;
+}
+
+.test-4-quest-btn-3 {
+    display: none;
+}
+
+.test-4-quest-num-2 {
+    display: none;
+}
+
+.test-4-quest-num-3 {
+    display: none;
+}
+
+.result-cool {
+    display: none;
+}
+
+.result-medium {
+    display: none;
+}
+
+.result-bad {
+    display: none;
+}
+
+.pokeball {
+    margin-top: 20%;
+}
+
+.card {
+    opacity: 0.97
+}
+
+.pokeclose {
+    display: none;
+    margin-top: 20%;
+}
+.marginbot {
+    margin-bottom: 10%
+}
+.margintop {
+    margin-top:15%;
+    padding-top: 10%;
+    margin-bottom: 10%
+}

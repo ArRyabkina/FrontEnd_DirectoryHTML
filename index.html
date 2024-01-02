@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+
+<body>
+    <img src="nnn.png" class="mainimg">
+    <div class="columns col-10 col-mx-auto">
+        <button class="btn active col-5 p-2">
+			<a href="help.html" class="text-light">
+                Помощь
+            </a>
+		</button>
+        <button class="btn active col-ml-auto col-5 p-2">
+            <a href="spravoch.html" class="text-light">
+                Справочник
+            </a>
+		</button>
+    </div>
+    <div class="center col-12 bg-secondary">
+        <h6 class="text-primary col-mx-auto col-10 mainh3 text-primary">
+            Добро пожаловать в справочник html. Здесь вы сможете найти основную информацию об html.
+        </h6>
+        <div class="modal modal-sm">
+                <a href="#close" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container">
+                    
+                    <div class="p-2 center text-grey">
+                        <div class="empty-icon">
+                            <img src="hello.png" class="img-responsive"/>
+                        </div>
+                        <p class="empty-title h5">Привет!</p>
+                        <p class="empty-subtitle">Добро пожаловать в наш справочник!</p>
+                        <div class="empty-action">
+                            <button class="btn btn-modal btn-primary">Спасибо!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+        var text = document.querySelector('.mainh3')
+        var modal = document.querySelector('.modal')
+        var btn = document.querySelector('.btn-modal')
+        
+        text.onclick=function(){
+            modal.classList.add('active')
+        }
+        
+        btn.onclick=function(){
+            modal.classList.remove('active')
+        }
+
+    </script>
+</body>
+
+</html>

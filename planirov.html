@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+<body>
+   <i class="icon icon-menu menu-btn text-primary"></i>
+    <div class="menu">
+        <div class="chip">
+            <img src="nnn.png" class="avatar avatar-mx"> СПРАВОЧНИК HTML
+        </div>
+        <ul class="content">
+            <li class="content-item">
+                <a href="index.html">
+                    Главное меню
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="spravoch.html">
+                    Справочник
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="help.html">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+     <div class="card">
+        <div class="card-image">
+            <img src="16.jpg" class="img-responsive">
+        </div>
+        <div class="card-header">
+            <div class="card-title h2">
+              Планирование страницы
+            </div>
+            <div class="card-subtitle text-gray">
+              Строй сайт максимально полезно!
+            </div>
+        </div>
+        <div class="card-body text-justify">
+            <p>Мы собираемся создать простую Web-страницу. В ходе этого процесса рассмотрим несколько новых тегов, впервые появившихся в спецификации HTML5. Для создания эффективной и рациональной Web-страницы необходимо разработать план, охватывающий все создаваемые компоненты. 
+    </p><p>Создаваемая нами страница будет иметь высокоуровневый дизайн, показанный на рисунке 1. Страница состоит из области Header, области Navigation, области Article, содержащей три раздела, области Aside и, наконец, области Footer. Эта страница предназначена для работы в браузере Google Chrome, что исключает возможный визуальный беспорядок, порождаемый стремлением к браузерной совместимости, который мог бы затруднить понимание базовой структуры. Наша цель состоит в создании страницы, которая наглядно демонстрировала бы новые теги HTML5 и показывала возможности их использования для создания хорошо оформленного кода и элегантного дизайна страницы. 
+    </p><h5 id="fig1" class="ibm-h5">Рисунок 1. План Web-страницы Acme United</h5><img src="plan1.gif" class="ibm-downsize" alt="Box with smaller boxes         within it showing the various components of the page." height="167" width="175"/><p>В процессе создания этой страницы я коснусь технологии CSS3, которая требуется для надлежащего отображения HTML5-страниц. Технология CSS3 необходима для придания определенного стиля HTML5-странице, для навигации по этой странице и для создания общего впечатления об этой странице. Группы свойств, описываемые в разделе CSS3 Reference на Web-сайте W3Schools.com (см. раздел <a href="#artrelatedtopics">Ресурсы</a>), охватывают такие полезные теги, как фон, шрифт, выделенные области и анимация. 
+    </p><p>Однако прежде чем приступать к конструированию страницы, необходимо изучить несколько новых элементов HTML5. 
+    </p><h2 id="header" class="ibm-h2">Область Header</h2><p>В рассматриваемом примере область Header содержит заголовок страницы и подзаголовок. Тег <code>&lt;header&gt;</code> используется с целью создания контента для области <code>Header</code> данной страницы. Тег <code>&lt;header&gt;</code> может содержать открывающую информацию о теге <code>&lt;section&gt;</code> и о теге <code>&lt;article&gt;</code>
+      в дополнение к самой Web-странице. Создаваемая нами Web-страница имеет область <code>Header</code>, показанную на высокоуровневом представлении ее дизайна, а также область <code>Header</code> внутри области <code>Article</code> и области <code>Section</code>. В листинге 1 показан пример разметки тега <code>&lt;header&gt;</code>.
+    </p><div style="overflow: auto"><h5 id="list1" class="ibm-h5">Листинг 1. Пример тега &lt;header&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;header&gt;
+    &lt;h1&gt;Heading Text&lt;/h1&gt;
+    &lt;p&gt; Text or images can be included here&lt;/p&gt;
+    &lt;p&gt; Logos are frequently placed here too&lt;/p&gt;
+&lt;/header&gt;</pre></span></div><p>Тег <code>&lt;header&gt;</code> также может содержать тег
+      <code>&lt;hgroup&gt;</code> (листинг 2). Тег <code>&lt;hgroup&gt;</code> группирует заголовки вместе, используя показанные уровни заголовков с <code>&lt;h1&gt;</code> по
+      <code>&lt;h6&gt;</code> с главным заголовком и подзаголовком. 
+    </p><div style="overflow: auto"><h5 id="list2" class="ibm-h5">Листинг 2. Пример тега &lt;hgroup&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;header&gt;
+    &lt;hgroup&gt;
+          &lt;h1&gt;Main Heading&lt;/h1&gt;
+          &lt;h2&gt;Sub-heading &lt;/h2&gt;
+    &lt;/hgroup&gt;
+    &lt;p&gt; Text or images can be included here&lt;/p&gt;
+&lt;/header&gt;</pre></span></div><h2 id="navigation" class="ibm-h2">Область Navigation</h2><p>Область Navigation на данной странице создается с помощью тега 
+      <code>&lt;nav&gt;</code>. Тег <code>&lt;nav&gt;</code>
+      специфицирует область, специально предназначенную для навигации. Тег 
+      <code>&lt;nav&gt;</code> следует использовать для навигации по основному сайту, а не для хранения ссылок на другие области данной страницы. Область Navigation может содержать код, подобный показанному в листинге 3. 
+    </p><div style="overflow: auto"><h5 id="list3" class="ibm-h5">
+Листинг 3. Пример тега  &lt;nav&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;nav&gt;
+     &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Our Products&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+&lt;/nav&gt;</pre></span></div>
+<h2 id="article" class="ibm-h2">Области Article и Section</h2><p>Проектируемая нами страница имеет одну область Article, которая содержит реальный контент данной страницы. Для создания этой области мы используем тег 
+      <code>&lt;article&gt;</code>, определяющий контент, который может быть использован независимо от остального контента этой данной страницы. Например, если вы хотите создать RSS-поток, то сможете использовать тег 
+      <code>&lt;article&gt;</code> для уникальной идентификации соответствующего контента. Тег 
+      <code>&lt;article&gt;</code> идентифицирует контент, который при перемещении в другой контекст может стать совершенно недоступным для понимания. 
+    </p><p>Область Article в плане страницы Acme United содержит три области Section. Мы создаем эти области с помощью тега <code>&lt;section&gt;</code>. Тег <code>&lt;section&gt;</code>
+      содержит релевантные области компонентов Web-контента. Тег <code>&lt;section&gt;</code>&#8212; как и тег  <code>&lt;article&gt;</code>&#8212; способен содержать заголовки, нижние колонтитулы или любые другие компоненты, необходимые для формирования данного раздела. Тег <code>&lt;section&gt;</code> предназначен для группировки контента. Контент для тега <code>&lt;section&gt;</code> и для тега <code>&lt;article&gt;</code> обычно начинается с тега <code>&lt;header&gt;</code> и заканчивается тегом <code>&lt;footer&gt;</code>, между которыми находится сам контент соответствующего тега. 
+    </p><p>Тег <code>&lt;section&gt;</code> также способен содержать теги
+      <code>&lt;article&gt;</code>, а тег 
+      <code>&lt;article&gt;</code> способен содержать тег 
+      <code>&lt;section&gt;</code>. Тег <code>&lt;section&gt;</code>
+      следует использовать для группировки сходной информации, а тег
+      <code>&lt;article&gt;</code> следует использовать для такой информации, как статья или блог, которая может быть перемещена в новый контекст без искажения смысла контента. Тег <code>&lt;article&gt;</code>, как и следует из его названия («статья»), предоставляет полный пакет информации. Тег <code>&lt;section&gt;</code>, напротив, содержит связанную информацию, однако эта информация не может быть помещена в другой контекст сама по себе, поскольку в этом случае ее смысл будет потерян.
+    </p><p>В листинге 4 показан пример применения тега <code>&lt;article&gt;</code>
+      и тега <code>&lt;section&gt;</code>.
+    </p><div style="overflow: auto"><h5 id="list4" class="ibm-h5">Листинг 4. Пример тегов &lt;article&gt; и &lt;section&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;article&gt;
+     &lt;section&gt;
+          Content
+     &lt;/section&gt;
+     &lt;section&gt;
+          Content
+     &lt;/section&gt;
+&lt;/article&gt;
+&lt;section&gt;
+     &lt;article&gt;
+          Content
+     &lt;/article&gt;
+     &lt;article&gt;
+          Content
+     &lt;/article&gt;
+&lt;/section&gt;</pre></span></div><h3 id="image" class="ibm-h3">Изобразительные теги</h3><p>Теги <code>&lt;section&gt;</code> и
+        <code>&lt;article&gt;</code>, как и теги 
+        <code>&lt;header&gt;</code> и <code>&lt;footer&gt;</code>,
+      способны содержать тег  <code>&lt;figure&gt;</code>. Этот тег используется для включения изображений, диаграмм и фотографий. 
+      </p><p>Тег <code>&lt;figure&gt;</code> может содержать тег  
+        <code>&lt;figcaption&gt;</code>, который, в свою очередь, содержит подпись для иллюстрации, содержащейся в теге <code>&lt;figure&gt;</code>. Это позволяет ввести описание, которое будет теснее связывать эту иллюстрацию с контентом. В листинге 5 показан пример структуры с тегом
+        <code>&lt;figure&gt;</code> и тегом
+        <code>&lt;figcaption&gt;</code>.
+      </p><div style="overflow: auto"><h5 id="list5" class="ibm-h5">Листинг 5. Пример тега &lt;figure&gt; и тега &lt;figcaption&gt; 
+      </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;figure&gt;
+     &lt;img src="/figure.jpg" width="304" height="228" alt="Picture"&gt;
+     &lt;figcaption&gt;Caption for the figure&lt;/figcaption&gt;
+&lt;/figure&gt;</pre></span></div><h3 id="media" class="ibm-h3">Медиа-теги</h3><p>Теги <code>&lt;section&gt;</code> и <code>&lt;article&gt;</code>
+        также способны содержать различный медиаконтент. HTML5 предоставляет теги, которые обеспечивают быстрое понимание содержащегося в них контента. До недавнего времени такие медийные компоненты, как музыка и видео, поддерживались только встраиваемыми средствами. HTML5 поддерживает их собственными средствами. 
+      </p><p>Тег <code>&lt;audio&gt;</code> способен содержать аудиоконтент, например, музыкальные или любые другие звуковые потоки. Тег <code>&lt;audio&gt;</code>
+        имеет атрибуты, которые определяют, какой аудиоматериал, когда и как будет воспроизводиться. К числу этих атрибутов относятся следующие: <code>src, preload, control, loop, autoplay</code>. В примере, показанном в листинге 6, аудио начинает воспроизводиться немедленно после загрузки страницы и воспроизводится непрерывно. Пользователю предоставляются органы управления, с помощью которых он может остановить или перезапустить воспроизведение аудио. 
+      </p><div style="overflow: auto"><h5 id="list6" class="ibm-h5">Листинг 6. Пример тега &lt;audio&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;audio src="MyFirstMusic.ogg" controls autoplay loop&gt;
+     Your browser does not support the audio tag.
+&lt;/audio&gt;</pre></span></div><p>Тег <code>&lt;video&gt;</code> позволяет транслировать видеоклипы или потоковые визуальные материалы. Он имеет все атрибуты тега 
+        <code>&lt;audio&gt;</code>, а также три других атрибута: <code>poster, width и height</code>. Тег <code>poster</code> позволяет указать изображение, которое должно отображаться на протяжении загрузки видео, или в ситуации, когда видео вообще не способно загрузиться. 
+      </p><p>В листинге 7 показан пример структуры тега <code>&lt;video&gt;</code>.
+      </p><div style="overflow: auto"><h5 id="list7" class="ibm-h5">Листинг 7. Пример тега &lt;video&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;video src="MyFirstMovie.ogg" controls="controls"&gt;
+     Your browser does not support the video tag
+&lt;/video&gt;</pre></span></div><p>Теги <code>&lt;video&gt;</code> и <code>&lt;audio&gt;</code>
+        способны содержать тег  <code>&lt;Source&gt;</code>, который описывает мультимедийные ресурсы для тегов
+        <code>&lt;video&gt;</code> и <code>&lt;audio&gt;</code>. Этот тег позволяет разработчику указать альтернативные видео- и аудиофайлы, из которых браузер сможет затем выбирать в зависимости от типа поддерживаемого медиаформата или кодека. В листинге 8 представлено два варианта выбора. Если используемый браузер не способен воспроизвести WMA-версию файла, попытайтесь использовать версию в формате MP3. В противном случае отобразите соответствующее сообщение, чтобы пользователь понимал, что данный аудиофайл недоступен. 
+      </p><div style="overflow: auto"><h5 id="list8" class="ibm-h5">Листинг 8. Пример тега &lt;source&gt;</h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;audio&gt;
+     &lt;source src="/music/good_enough.wma" type="audio/x-ms-wma"&gt;
+     &lt;source src="/music/good_enough.mp3" type="audio/mpeg"&gt;
+     &lt;p&gt;Your browser does not support the HTML 'audio' element.&lt;/p&gt;
+&lt;/audio&gt;</pre></span></div><p>Тег <code>&lt;embed&gt;</code> описывает встроенный контент, который может быть отображен на странице, например, файлы Adobe Flash в формате SWF. Листинг 9 содержит атрибут <code>type</code>, который идентифицирует встроенный источник как Flash-файл. 
+      </p><div style="overflow: auto"><h5 id="list9" class="ibm-h5">Листинг 9. Пример тега &lt;embed&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;embed src="MyFirstVideo.swf" type="application/x-shockwave-flash" /&gt;</pre></span></div><p>В дополнение к атрибутам <code>src</code> и <code>type</code> тег <code>&lt;embed&gt;</code> имеет атрибут <code>height</code> и атрибут <code>width</code>. 
+      </p><h2 id="aside" class="ibm-h2">Область Aside</h2><p>Мы создаем область Aside в плане страницы Acme United с помощью тега <code>&lt;aside&gt;</code>. Этот тег предназначен для вспомогательного контента, не являющегося частью основного материала статьи, которую он дополняет. Например, в журналах теги типа aside часто используются для выделения выводов, сделанных в самой статье. Тег <code>&lt;aside&gt;</code> содержит контент, который может быть удален без ущерба для информации, излагаемой в статье, секции или странице, содержащей этот тег. 
+    </p><p>В листинге 10 показан пример применения тега <code>&lt;aside&gt;</code>.
+    </p><div style="overflow: auto"><h5 id="list10" class="ibm-h5">Листинг 10. Пример тега &lt;aside&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;p&gt;My family and I visited Euro Disney last year.&lt;/p&gt;
+&lt;aside&gt;
+     &lt;h4&gt;Disney in France&lt;/h4&gt;
+     &lt;p&gt;Besides Euro Disney, there is a Disneyland in California.&lt;/p&gt;
+&lt;/aside&gt;</pre></span></div><h2 id="footer" class="ibm-h2">Область Footer</h2><p>Тег <code>&lt;footer&gt;</code> содержит информацию о странице, о статье или о разделе, например, сведения об авторе или дату написания. В качестве нижнего колонтитула он может содержать информацию об авторских правах и другую важную юридическую информацию (листинг 11). 
+    </p><div style="overflow: auto"><h5 id="list11" class="ibm-h5">Листинг 11. Пример тега &lt;footer&gt; </h5><span class="dw-code-nohighlight"><pre data-widget="syntaxhighlighter" class="brush: js; html-script: true; gutter: true;">&lt;footer&gt;
+     &lt;p&gt;Copyright 2011 Acme United. All rights reserved.&lt;/p&gt;
+&lt;/footer&gt;</pre></span></div>
+        </div>
+        <div class="card-footer" style="overflow: auto">
+            <div class="h5 text-gray">
+                Источники:
+            </div>
+            https://www.ibm.com/developerworks/ru/library/wa-html5fundamentals/index.html
+        </div>
+         <div class="card-footer col-12 center">
+            <a href="spravoch.html">
+                <button class="btn btn-primary col-11" style="margin-bottom: 10%">
+                    Назад в справочник
+                </button>
+           </a>
+        </div>
+    </div>
+    
+    
+    <script>
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu-btn')
+
+        menuBtn.onclick = function() {
+            menu.style.top = '0'
+        }
+
+        menu.onclick = function() {
+            menu.style.top = '-30%'
+        }
+
+    </script>  
+</body>
+</html>

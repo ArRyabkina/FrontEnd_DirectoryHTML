@@ -1,0 +1,147 @@
+body {
+	background-image: url(777.jpg);
+	background-size:  110% 150%;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 15%;
+    padding-bottom: 15%
+}
+
+.mainh3{
+	font-size: 100%;
+	margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.width {
+    width: 100%;
+    margin-right: 0
+}
+
+.mainimg {
+	width: 90%;
+	height: 90%;
+	margin: 3.5% 0 0 5%;
+}
+
+.center {
+    text-align: center
+}
+
+.menu-text {
+	margin-top: 86%;
+    color: #6b6380;
+}
+
+.sprav-card-footer {
+    margin: 30% 0 30% 0;
+}
+
+.sprav-sodergh {
+    margin: 0 0 -3% 10%;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 26px
+}
+
+.menu {
+    position: absolute;
+    top: -30%;
+    left: 0;
+    height: 27%;
+    width: 100%;
+    transition: 1.3s;
+    color: #6b6380;
+}
+
+.dropdown-menu {
+    background: white;
+    border-radius: 3%;
+    border: 0.2px solid #e6e6e6;
+    width: 37.7%;
+    position: absolute;
+    top: 55.1%;
+    left: 5.6%;
+    height: 19%;
+    display: none;
+}
+
+.dropdown-menu button {
+    margin: 2%;
+}
+
+.sprav-uvedoml-no {
+    display: none;
+}
+
+.sprav-text-html-1 {
+    display: none;
+    border-top: 0.02px solid #c2caeb; 
+}
+
+.sprav-text-html-2 {
+    display: none;
+    border-top: 0.02px solid #c2caeb; 
+}
+
+.accordion-body-1 {
+    display: none
+}
+
+.accordion-body-2 {
+    display: none
+}
+
+.test-nach-1 {
+    display: none;
+}
+
+.test-nach-2 {
+    display: none;
+}
+.test-nach-3 {
+    display: none;
+}
+.test-nach-4 {
+    display: none;
+}
+.ctrykt {
+	color: black;
+	width: 100%;
+	margin: 0 auto;
+    padding-top: 3%
+}
+.ctrykt p {
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+	padding-bottom:  7%;
+    margin-bottom: 0;
+}
+.ctrykt h3 {
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+	padding-top: 7%
+}
+.ctrykt h5{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-top: 7%;
+}
+.test-card span {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.tegi-img{
+    width: 100%;
+}

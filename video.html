@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+
+<body>
+    <i class="icon icon-menu menu-btn text-primary"></i>
+    <div class="menu">
+        <div class="chip">
+            <img src="nnn.png" class="avatar avatar-mx"> СПРАВОЧНИК HTML
+        </div>
+        <ul class="content">
+            <li class="content-item">
+                <a href="index.html">
+                    Главное меню
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="spravoch.html">
+                    Справочник
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="help.html">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img src="help-and-support.png" class="img-responsive">
+        </div>
+        <div class="card-header">
+            <div class="card-title h1 center">
+                Видеоуроки от программистов!
+            </div>
+            <div class="card-subtitle text-gray center">
+                Немного переварим информацию<br/>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="chip h1">
+                <img src="video-img1.jpg" class="avatar avatar-xl">IT-школа Алексея Илларионова
+            </div>
+            <div class="col-9 col-mx-auto"><br/>
+                Всё, что было здесь сделано, благодаря этой IT-школе. Огромное им спасибо за полученные знания! И поэтому мы бы хотели порекомендовать прослушать видео-уроки с <a href="https://www.youtube.com/watch?v=Kvvo0z5Bn6M&list=PLtyC3RLRPBoObbJkeVXzKDx6KQsUhy_js">канала</a> нашего учителя! Надеемся на твои успехи в данном деле! (А так же ты можешь записаться на курсы, пройдя интесив летом)
+            </div>
+            <hr color="grey" size="0.02px" width="80%" style="margin-top: 7%">
+            <video class="video-responsive" src="video.mp4" controls autoplay></video>
+            На остальных мы можем лишь скинуть сылки, потому что не имеем их разрешения. Так что смотрите канал на YouTube. 
+        </div>
+        <div class="card-footer col-12 center">
+            <a href="spravoch.html">
+                <button class="btn btn-primary col-11">
+                    Назад в справочник
+                </button>
+           </a>
+        </div>
+    </div>
+
+    <script>
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu-btn')
+
+        menuBtn.onclick = function() {
+            menu.style.top = '0'
+        }
+
+        menu.onclick = function() {
+            menu.style.top = '-30%'
+        }
+
+    </script>
+</body>
+
+</html>

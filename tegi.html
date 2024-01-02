@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+
+<body>
+    <i class="icon icon-menu menu-btn text-primary"></i>
+    <div class="menu">
+        <div class="chip">
+            <img src="nnn.png" class="avatar avatar-mx"> СПРАВОЧНИК HTML
+        </div>
+        <ul class="content">
+            <li class="content-item">
+                <a href="index.html">
+                    Главное меню
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="spravoch.html">
+                    Справочник
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="help.html">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img src="14.jpg" class="img-responsive tegi-img">
+        </div>
+        <div class="card-header">
+            <div class="card-title h1">
+                <mark>
+                Теги
+            </mark>
+            </div>
+            <div class="card-subtitle text-gray">
+                Создавай сайт умело!
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="content">
+                <h1>Что такое теги и для чего они нужны?</h1>
+                <h2>Что такое парные теги?</h2>
+                <p class="text-justify">Продолжим наше ознакомительное искусство по HTML. На очереди – парные теги. И вообще, что за слово такое ругательное? Теги? Итак, тег, умные люди, в частности отцы паутины, называют «дескриптор», но я его так никогда не называл, и не буду называть на моем сайте, можно же просто – «тег». Тег – это элемент языкаразметки текста (HTML). Кратко говоря: «Тег – элемент HTML», все, что внутри тега, называют содержанием элемента. Логично, не так ли? Я говорю проще: «внутри тега», умные слова только на конференциях нужно использовать, а не в быту. Итак, подобрались к парным тегам, включаем логику, парный, хм… значит, есть начальный тег и конечный тег, но их так не называют, кроме Википедии, конечно. Правильно так: «Открывающий и Закрывающий тег». Даже с большой буквы написал, в знак уважения. Теперь, например: <code>&lt;p&gt;…&lt;/p&gt;</code>, есть открывающий, есть закрывающий тег, значит парный тег. Тег &lt;h1&gt;…&lt;/h1&gt; тоже парный, кстати, знакомлю, это заголовок первого уровня, то есть простой текст, по отношению к нему, будет меньше. С парными тегами кончено.</p>
+
+
+                <h2>Что такое одинарные теги?</h2>
+                <p class="text-justify">Несложно догадаться, что у одинарного тега нет закрывающего, пример: &lt;br&gt;, &lt;hr&gt;, &lt;img&gt;. Думаю, кто-то видел теги такого плана: &lt;br/&gt;, ну и так далее. Я называю это «Старый стиль». Да, когда был HTML4, нужно было закрывать одинарный тег именно так, но с появлением HTML5 многое изменилось, и не только это конечно. Я не настаиваю на написание закрывающей косой черты и в системе проверки это учтено, но давайте быть новаторами и не тормозить процесс! Те три тега «перенос строки», «разделительная линия», «изображение» соответственно.</p>
+
+                <h2>О парных тегах</h2>
+
+                <p class="text-justify">Умение быстро и четко манипулировать тегами, это хороший старт в изучении. Вы практически всегда будете работать с этими различными тегами. В уроке пятом (парные теги), вы познакомитесь ближе с парными тэгами.</p>
+                <p class="text-justify">Правильно структурировать информацию, тоже хорошее дело, ведь поисковые системы (Yandex, Google), любят, когда заголовки помещены в теги заголовка первого уровня – это информация официальная, ее озвучил глава Google. На поисковую выдачу влияет так же использование тегов «маркированный список» и >«нумерованный список». На поисковую выдачу так же влияет использование атрибутов title, alt. Да это только малая часть, на самом деле, где 200 официальных пунктов от Google, которые влияют на выдачу в поисковике.</p>
+
+            </div>
+            <h2>Список тегов HTML</h2>
+            <p class="text-justify">Ниже в таблице представлен список тегов HTML5 с кратким описанием на русском языке.</p>
+            <div class="filter">
+  <input type="radio" id="tag-0" class="filter-tag" name="filter-radio" hidden checked>
+  <input type="radio" id="tag-1" class="filter-tag" name="filter-radio" hidden>
+  <input type="radio" id="tag-2" class="filter-tag" name="filter-radio" hidden>
+
+  <div class="filter-nav">
+    <label class="chip" for="tag-0">Всё</label>
+    <label class="chip" for="tag-1">1 часть </label>
+    <label class="chip" for="tag-2">2 часть</label>
+  </div>
+
+  <div class="filter-body">
+   <table class="table table-striped table-hover">
+    <div class="filter-item card" data-tag="tag-1">
+       <tr>
+                    <th>Тег</th>
+                    <th>Краткое описание</th>
+                </tr>
+                <tr>
+                    <td>&lt;!--...--&gt;</td>
+                    <td>Комментарий. </td>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE&gt;</td>
+                    <td>Определяет тип документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Ссылка, гиперссылка, якорь. </td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Определяет текст как аббревиатуру. </td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>Контактная информация автора или владельца документа. </td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>Определяет область на карте-изображении</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Статья</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Контент в стороне (содержимое не является основным на странице по смыслу)</td>
+                </tr>
+                <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Позволяет вставить воспроизводимый аудио файл. </td>
+                </tr>
+                <tr>
+                    <td>&lt;b&gt;</td>
+                    <td>Полужирный текст. </td>
+                </tr>
+                <tr>
+                    <td>&lt;base&gt;</td>
+                    <td>Задает базовый URL или аттрибут target для относительных ссылок в документе. </td>
+                </tr>
+                <tr>
+                    <td>&lt;bdi&gt;</td>
+                    <td>Область, где написание текста может имееть другое направления. </td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>Устанавливает направление написания текста. В отличии от &lt;bdi&gt; направление указывается физическое направление </td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Цитата.</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Указывает область body документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Перенос строки.</td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Кликабельная кнопка</td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>Используется для рисовании графики с помощью скриптов</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Подпись таблицы.</td>
+                </tr>
+                <tr>
+                    <td>&lt;cite&gt;</td>
+                    <td>Сноска на название материала.</td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Используется для вставки компьютерного кода в текстовом виде.</td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Задает характеристики колонок в таблице. </td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Определяет группу из одной или более колонок таблицы для форматирования. </td>
+                </tr>
+                <tr>
+                    <td>&lt;datalist&gt;</td>
+                    <td>Используется для определения предопределенных вариантов на выбор при вводе в текстовом поле</td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>Определяет описание термина из тега &lt;dt&gt; в списке терминов &lt;dl&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Текст, который удален в новой версии документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Определяет дополнительную информацию, которую пользователь может просмотреть или скрыть</td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Указывает, что содержимое является термином.</td>
+                </tr>
+                <tr>
+                    <td>&lt;dialog&gt;</td>
+                    <td>Определяет диалоговое окно или интерактивный элемент</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Блочный элемент - один из основных элементов верстки.></td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>Определяет список определений</td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>Название термина в списке определений &lt;dl&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>выделенный по смыслу текст (обычно, текст выделенный курсивом).</td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Контейнер для внешнего приложения</td>
+                </tr>
+                <tr>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>Группа связанных элементов в форме</td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Заголовок для &lt;figure&gt; элемента</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Определяет автономную группу из нескольких элементов (например картинка с подписью)</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Нижний колонтитул</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Определяет форму пользовательского ввода</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                    <td>Заголовки HTML разного уровня: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Указывает область head документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Блок заголовка</td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Горизонтальная линия - тематический разделитель.</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Корневой элемент. Сообщает браузеру, что данный документ является HTML документом. </td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Выделяет текст курсивом.</td>
+                </tr>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Определяет встроенный фрейм</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Изображение, картинка.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Поле для ввода</td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Текст, который был добавлен в новой версии документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;kbd&gt;</td>
+                    <td>Текст введенный с клавиатуры или названия кнопок клавиатуры. Обычно выделен моноширинным шрифтом.</td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>Метка для поля ввода. Указывает на привязку элемента (обычно текста) к полю ввода.</td>
+                </tr>
+                <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>Заголовок элементов &lt;fieldset&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>Элемент списка</td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Определяет привязку внешнего ресурса (чаще всего, привязку таблицы стилей CSS)</td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Основной контент</td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>Контейнер для &lt;area&gt;. Определяет пользовательскую карту на изображении</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Выделенный текст (обычно с помощью подсветки фона).</td>
+                </tr>
+                <tr>
+                    <td>&lt;menu&gt;</td>
+                    <td>Контейнер для списка пунктов меню</td>
+                </tr>
+    </div>
+    <div class="filter-item card" data-tag="tag-2">
+      <tr>
+                    <td>&lt;menuitem&gt;</td>
+                    <td>Определяет элементы, которые пользователь может вызвать из контекстного меню</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Используется для определения мета-данных документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;meter&gt;</td>
+                    <td>Измеритель значений в заданном диапазоне</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Контейнер для навигационных элементов</td>
+                </tr>
+                <tr>
+                    <td>&lt;noscript&gt;</td>
+                    <td>Альтернативный контент для пользователей, отключивших скрипты</td>
+                </tr>
+                <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Определяет встроенный объект</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Определяет нумерованный список</td>
+                </tr>
+                <tr>
+                    <td>&lt;optgroup&gt;</td>
+                    <td>Определяет группу связанных вариантов в выпадающем списке. Дает название группу</td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Параметр (вариант выбора) в выпадающем списке</td>
+                </tr>
+                <tr>
+                    <td>&lt;output&gt;</td>
+                    <td>Результат вычислений</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Абзац.</td>
+                </tr>
+                <tr>
+                    <td>&lt;param&gt;</td>
+                    <td>Задает параметры для встроенных объектов</td>
+                </tr>
+                <tr>
+                    <td>&lt;picture&gt;</td>
+                    <td>Контейнер для нескольких изображений</td>
+                </tr>
+                <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Предварительно отформатированный текст.</td>
+                </tr>
+                <tr>
+                    <td>&lt;progress&gt;</td>
+                    <td>Индикатор выполнения (прогресса)</td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Цитата в тексте.</td>
+                </tr>
+                <tr>
+                    <td>&lt;rp&gt;</td>
+                    <td>Альтернативный текст, если браузер не поддерживает тег &lt;ruby&gt;. </td>
+                </tr>
+                <tr>
+                    <td>&lt;rt&gt;</td>
+                    <td>Аннотация к содержимому тега &lt;ruby&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ruby&gt;</td>
+                    <td>Контейнер для символов и их расшифровки (в основном для Восточно-азиатских символов, иероглифов).</td>
+                </tr>
+                <tr>
+                    <td>&lt;s&gt;</td>
+                    <td>Перечеркнутый текст.</td>
+                </tr>
+                <tr>
+                    <td>&lt;samp&gt;</td>
+                    <td>Текст, являющийся результатом выполнения компьютерной программы (обычно выводится моноширинным шрифтом).</td>
+                </tr>
+                <tr>
+                    <td>&lt;script&gt;</td>
+                    <td>Определяет скрипт или подключение скрипта из внешнего ресурса.</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Раздел</td>
+                </tr>
+                <tr>
+                    <td>&lt;select&gt;</td>
+                    <td>Определяет выпадающий список</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Текст шрифтом меньшего размера.</td>
+                </tr>
+                <tr>
+                    <td>&lt;source&gt;</td>
+                    <td>Определяет ресурс для тегов &lt;video&gt;, &lt;audio&gt; и &lt;picture&gt;.></td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Строчный элемент.</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Текст, выделенный по значению. Обычно отображается полужирным.</td>
+                </tr>
+                <tr>
+                    <td>&lt;style&gt;</td>
+                    <td>Определяет контейнер для определения стилей документа</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Отображает текст в виде нижнего индекса.</td>
+                </tr>
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>Заголовок внутри тега &lt;details&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Отображает текст в виде верхнего индекса. </td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Определяет таблицу.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Определяет область контента в таблице. </td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Ячейка в таблице &lt;table&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Многострочное поле для ввода</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Определяет группу строк в нижней части таблицы &lt;table&gt; - нижний колонтитул.</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Ячейка - заголовок в таблице &lt;table&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Определяет группу строк в верхней части таблицы &lt;table&gt; - верхний колонтитул.</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Дата и/или время</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Заголовок HTML документа.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Определяет строку в таблице.</td>
+                </tr>
+                <tr>
+                    <td>&lt;track&gt;</td>
+                    <td>Определяет текстовую дорожку для тегов &lt;video&gt; и &lt;audio&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Определяет маркированный список</td>
+                </tr>
+                <tr>
+                    <td>&lt;var&gt;</td>
+                    <td>Используется для обозначения содержимого тега как переменной.</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Позволяет вставить воспроизводимое видео.</td>
+                </tr>
+                <tr>
+                    <td>&lt;wbr&gt;</td>
+                    <td>Место, где допускается перенос строки.</td>
+                </tr>
+    </div>
+    
+  </div>
+</div>
+            </table>
+
+        </div>
+        <div class="card-footer" style="overflow: auto">
+            <div class="h5 text-gray">
+                Источники:
+            </div>
+            https://guruweba.com/html/<br/> https://codebra.ru/ru/lessons-html/dating/2/2
+        </div>
+        <div class="card-footer col-12 center">
+            <a href="spravoch.html">
+                <button class="btn btn-primary col-11" style="margin-bottom: 10%">
+                    Назад в справочник
+                </button>
+           </a>
+        </div>
+    </div>
+
+    <script>
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu-btn')
+
+        menuBtn.onclick = function() {
+            menu.style.top = '0'
+        }
+
+        menu.onclick = function() {
+            menu.style.top = '-30%'
+        }
+
+    </script>
+</body>
+
+</html>
