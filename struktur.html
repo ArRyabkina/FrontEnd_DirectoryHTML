@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+
+<body>
+    <i class="icon icon-menu menu-btn text-primary"></i>
+    <div class="menu">
+        <div class="chip">
+            <img src="nnn.png" class="avatar avatar-mx"> СПРАВОЧНИК HTML
+        </div>
+        <ul class="content">
+            <li class="content-item">
+                <a href="index.html">
+                    Главное меню
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="spravoch.html">
+                    Справочник
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="help.html">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrykt bg-gray">
+        <div class="center">
+            <img src="icon1.png" class="avatar avatar-xl ctrykt-header-img">
+        </div>
+        <hr color="grey" size="0.02px" width="80%">
+        <h3>
+            Структура докумета
+        </h3>
+        <p class="text-justify">
+            Каждый документ HTML имеет соответствующее расширение, например, Index.html. Так браузер сможет понять, с чем он имеет дело, и правильно отобразит страницу. Все файлы, используемые для создания сайта, желательно хранить в одной директории, что в дальнейшем существенно облегчит вам жизнь. Основы языка разметки гипертекста HTML предполагают чёткое понимание структуры документа. Начинается он с тега , сообщающего браузеру версию HTML, которая используется в этом документе. На данный момент актуальна пятая версия языка, так что тут не нужно ничего выдумывать, можно смело вставлять приведённый выше тег в начало любой страницы. Потом идут основные парные структуры, составляющие «скелет» сайта. Первый тег, в который вложены все остальные — .... Всё, что находится за его пределами, не распознаётся браузером как веб-страница, так что он открывает документ и закрывает его. Этот тег является обязательным для любого документа. В нём также содержатся ещё несколько обязательных тегов, которые будут рассмотрены ниже.
+        </p>
+    </div>
+    <img src="888.jpg" class="col-12">
+    <div class="ctrykt bg-gray">
+        <h3>
+            Head
+        </h3>
+        <p class="text-justify">
+            Внутри тега ... содержится информация технического характера, которая не будет отображаться на странице, но, тем не менее, является важной частью документа HTML. Основы сайта закладываются именно в этом месте, здесь выбирается кодировка и вводится название страницы. Оно содержится внутри обязательного тега . Отображается название в верхней части браузера, где также можно разместить небольшую иконку, характеризующую содержимое страницы. Желательно сразу указать кодировку документа для его корректного отображения. Это можно сделать при помощи тега . Метатеги предоставляют данные о структуре страницы и обычно располагаются внутри head.
+    </div>
+    <div class="ctrykt bg-gray">
+        <h3>
+            Body
+        </h3>
+        <p class="text-justify">
+            Именно в этой части HTML-документа создаётся видимая часть страницы. Всё, что делается внутри «тела», будет показано браузером. В используется огромное количество тегов HTML. Основы — это форматирование текста, работа со ссылками и простейшие инструменты для структурирования веб-страницы. Чтобы приступить к работе в HTML, достаточно знать основные теги и уметь ими пользоваться.
+        </p>
+    </div>
+    <div class="card-footer ctrykt bg-gray" style="overflow: auto">
+        <h5>
+            Источники:
+        </h5>
+        <p>
+            http://fb.ru/article/250376/html-osnovyi-dlya-nachinayuschih
+        </p>
+        <div class="card-footer col-12 center">
+            <a href="spravoch.html">
+                <button class="btn btn-primary col-11" style="margin-bottom: 10%">
+                    Назад в справочник
+                </button>
+           </a>
+        </div>
+    </div>
+    
+    <script>
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu-btn')
+
+        menuBtn.onclick = function() {
+            menu.style.top = '0'
+        }
+
+        menu.onclick = function() {
+            menu.style.top = '-30%'
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+
+<body>
+    <i class="icon icon-menu menu-btn text-primary"></i>
+    <div class="menu">
+        <div class="chip">
+            <img src="nnn.png" class="avatar avatar-mx"> СПРАВОЧНИК HTML
+        </div>
+        <ul class="content">
+            <li class="content-item">
+                <a href="index.html">
+                    Главное меню
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="spravoch.html">
+                    Справочник
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="help.html">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title h2">Помощь</div>
+            <div class="card-subtitle text-gray">Пока служба поддержки не работает! Но мы оставили здесь некие шпаргалки. Надеемся, они вам помогут!</div>
+        </div>
+        <div class="card-image">
+            <img src="support1.png" class="img-responsive">
+        </div>
+        <div class="card-body">
+            <div class="h5 text-gray">
+                <h3>
+                    Шпаргалка
+                </h3>
+                <div class="accordion">
+                    <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+                    <label class="accordion-header-1 h4">
+                         <i class="icon icon-arrow-right mr-1"></i>
+                        Приложение сломалось!
+                    </label>
+                    <div class="accordion-body-1">
+                        <label class="accordion-header tooltip" data-tooltip="Напишите нам в отзвах, мы обязательно все исправим!">
+                            Картинки/видео/текст съежают
+                        </label>
+                        <label class="accordion-header tooltip" data-tooltip="Напишите нам в отзвах, мы обязательно все исправим!">
+                            Не работает тест/кнопка/видео!
+                        </label>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+                    <label class="accordion-header-2 h4">
+                         <i class="icon icon-arrow-right mr-1"></i>
+                        Нашел ошибку в тексте!
+                    </label>
+                    <div class="accordion-body-2">
+                        <label class="accordion-header tooltip" data-tooltip="Напишите нам в отзывах, обязательно исправим!">
+                            Грамматическая
+                        </label>
+                        <label class="accordion-header tooltip" data-tooltip="Напишите нам в отзывах, обязательно исправим!">
+                            В html было не так!
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="columns col-12 p-2 col-mx-auto">
+                <div class="columns col-6 text-justify">
+                    Наше приложение было создано чисто на добровотельской основе. Мы хотели создать компактную "книгу", ведь таскать с собой всякие настоящие напечатанные или выискывать ответ в интренете бывает очень трудно или же просто занимает больше времени, чем если бы мы смотрели это в приложении
+                </div>
+                <div class="columns col-6 col-ml-auto text-justify">
+                    Уважаемые пользователи, мы можешь не отвечать или не исправлять наши ошибки из-за плотного графика, или, если признаться, по причине лени, но! Мы очень ценим наших потребителей и постраемся по случаю все переделать по вашим пожеланиям! Ведь для кого создавалось все это? Для айтишников и в частности новичков!
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">
+                <a href="#" class="text-light">
+                    Прочел
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <div class="empty">
+        <p class="empty-title h5">Вопросы? Напиши нам!</p>
+        <p class="empty-subtitle">Нажмите на кнопку, чтобы написать письмо</p>
+        <div class="empty-action">
+            <div class="popover popover-top">
+                <button class="btn btn-primary">Отправить сообщение</button>
+                <div class="popover-container">
+                    <div class="form-group">
+                        <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+                        <button class="btn tooltip disabled bg-primary" data-tooltip="Упс. Пока данная функция не работает!">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var accordH1 = document.querySelector('.accordion-header-1')
+        var accordH2 = document.querySelector('.accordion-header-2')
+        var accordB2 = document.querySelector('.accordion-body-2')
+        var accordB1 = document.querySelector('.accordion-body-1')
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu-btn')
+        
+        accordH1.onclick=function() {
+        if(accordB1.style.display=='block' && accordB2.style.display=='none'){
+           accordB1.style.display='none'
+           accordB2.style.display='none'
+        }else {
+           accordB1.style.display='block'
+           accordB2.style.display='none'
+        }
+        }
+        
+        accordH2.onclick=function() {
+        if(accordB2.style.display=='block' && accordB1.style.display=='none'){
+           accordB2.style.display='none'
+           accordB1.style.display='none'
+        }else {
+           accordB2.style.display='block'
+           accordB1.style.display='none'
+        }
+        }
+        
+        menuBtn.onclick = function() {
+            menu.style.top = '0'
+        }
+
+        menu.onclick = function() {
+            menu.style.top = '-30%'
+        }
+
+    </script>
+</body>
+
+</html>

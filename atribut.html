@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon2.png" type="image/png">
+</head>
+<body>
+   <i class="icon icon-menu menu-btn text-primary"></i>
+    <div class="menu">
+        <div class="chip">
+            <img src="nnn.png" class="avatar avatar-mx"> СПРАВОЧНИК HTML
+        </div>
+        <ul class="content">
+            <li class="content-item">
+                <a href="index.html">
+                    Главное меню
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="spravoch.html">
+                    Справочник
+                </a>
+            </li>
+            <li class="content-item">
+                <a href="help.html">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="card"> 
+       <div class="card-image"> 
+          <img src="13.png" class="img-responsive width"> 
+       </div> 
+       <div class="card-header">
+          <div class="card-title h2 center">
+             Атрибуты
+          </div> 
+          <div class="card-subtitle text-gray">
+            Цвет и фон только атрибуты
+          </div>
+       </div> 
+       <div class="card-body"> 
+          <h5>Что такое атрибуты,правила написания и зачем они нужны</h5>
+<p>
+<div id="advertur_7611"></div><script type="text/javascript">
+    (function(w, d, n) {
+        w[n] = w[n] || [];
+        w[n].push({
+            section_id: 7611,
+            place: "advertur_7611",
+            width: 728,
+            height: 90
+        });
+    })(window, document, "advertur_sections");
+</script>
+
+<!-- 728*90 Advertur.ru end --><br />
+Помимо тегов существуют еще и так называемые <strong>атрибуты</strong>. Точнее не помимо, а в тегах. С помощью атрибутов можно задать дополнительные параметры для какого-либо тега. <strong>Атрибуты</strong> для каждого тега свои, а в данной теме мы будем экспериментировать над тегом &lt;font&gt;, который без атрибутов, собственно, ничего толкового не делает.</p>
+<p><strong>Font</strong>&nbsp;&mdash; контейнерный тег, применяемый для форматирования текста. С помощью данного тега вы сможете и выделить текст жирным, и изменить размер, и расстояние между строк&nbsp;&mdash; в общем все, что можно делать с текстом. Рассмотрим пример с размером текста. Для начала заключим текст в тег Font.</p>
+<pre class="brush: xml; title: ; notranslate" title=""> &lt;font&gt; Текст &lt;/font&gt;</pre>
+<p>Теперь немного про правила написания атрибутов. Атрибуты<strong> всегда</strong> пишутся в открывающем теге и после символов самого тега. Можно написать в одном теге несколько атрибутов в любом порядке. Атрибуты вы можете найти на сайте валидатора W3C (про который я напишу чуть ниже). Итак, вот пример тега font с атрибутом size:</p>
+<pre class="brush: xml; title: ; notranslate" title="">&lt;font size=&quot;5&quot;&gt; Текст&lt;/font&gt; </pre>
+<p>Данный атрибут в теге font изменяет размер заключенного в теги Текста .<br />
+Если вы откроете исходный код страницы, то увидите, что место, где находится большое слово &laquo;Текста&raquo; имеет вид</p>
+<pre class="brush: xml; title: ; notranslate" title="">&lt;font size=&quot;5&quot;&gt; Текста &lt;/font&gt;</pre>
+<p>Вы уже увидели как пишутся атрибуты. Ровно также они пишутся и в других тегах: сначала пишем сам атрибут (в данном случае size), затем ставим &laquo;=&raquo; и заключаем параметр атрибута в двойные кавычки. Параметры атрибутов вы сможете найти все на том же сайте консорциума всемирной паутины.</p>
+
+<h2 id="Список_атрибутов">Список атрибутов</h2>
+
+  
+<div style="overflow: auto">
+<table class="standard-table table table-striped table-hover">
+ <thead>
+  <tr>
+   <th>Имя атрибута</th>
+   <th>Элементы</th>
+   <th>Описание</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><code>hidden</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Предотвращает генерирование данного элемента, в то время как сохраняет дочерние элементы, например, элементы script, active.</td>
+  </tr>
+  <tr>
+   <td><code>high</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a></td>
+   <td>Указывает нижнюю границу верхнего диапазона.</td>
+  </tr>
+  <tr>
+   <td><code>href</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/base" title="HTML элемент &lt;base> определяет основной адрес (URL), используемый для всех относительных адресов (URLs) в документе. Может быть только один &lt;base> элемент в одном документе. 
+ Основной адрес (URL) документа можно запросить скриптом используя document.baseURI."><code>&lt;base&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/link" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;link&gt;</code></a></td>
+   <td> URL связанного ресурса.</td>
+  </tr>
+  <tr>
+   <td><code>hreflang</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/link" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;link&gt;</code></a></td>
+   <td>Указывает язык связанного ресурса.</td>
+  </tr>
+  <tr>
+   <td><code>http-equiv</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/meta" title="Этот элемент включает в себя global attributes."><code>&lt;meta&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>icon</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/command" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;command&gt;</code></a></td>
+   <td>Указывает картинку, которая будет представлять команду.</td>
+  </tr>
+  <tr>
+   <td><code>id</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Часто используется с CSS для стилизации заданного элемента. Значение атрибута должно быть уникальным.</td>
+  </tr>
+  <tr>
+   <td><code>ismap</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a></td>
+   <td>Показывает, что изображение часть серверной карты изображений.</td>
+  </tr>
+  <tr>
+   <td><code>itemprop</code></td>
+   <td>Глобальный атрибут</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>keytype</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/keygen" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;keygen&gt;</code></a></td>
+   <td>Указывает тип сгенерированного ключа.</td>
+  </tr>
+  <tr>
+   <td><code>kind</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/track" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;track&gt;</code></a></td>
+   <td>Указывает вид дорожки текста.</td>
+  </tr>
+  <tr>
+   <td><code>label</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/track" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;track&gt;</code></a></td>
+   <td>Указывает читабельный заголовок дорожки текста.</td>
+  </tr>
+  <tr>
+   <td><code>lang</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Определяет язык для используемого элемента.</td>
+  </tr>
+  <tr>
+   <td><code>language</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/script" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;script&gt;</code></a></td>
+   <td>Определяет язык скрипта, используемый в элементе.</td>
+  </tr>
+  <tr>
+   <td><code>list</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td>Задаёт список предустановленных опций для предложения пользователю.</td>
+  </tr>
+  <tr>
+   <td><code>loop</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/audio" title="HTML &lt;audio> элемент используется для встраивания аудиоконтента в документы. Он может содрежать один или несколько аудио источников, представленным при помощи аттрибута src или при помощи &lt;source> элемента; браузер будет выбирать наиболее подходящий источник."><code>&lt;audio&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/bgsound" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;bgsound&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/marquee" title="HTML-элемент &lt;marquee> используется для создания на странице прокручивающегося текста (бегущей строки)."><code>&lt;marquee&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Указывает, следует ли медиа элементам начинать проигрывание сначала, после их завершения.</td>
+  </tr>
+  <tr>
+   <td><code>low</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a></td>
+   <td>Указывает верхнюю границу нижнего диапазона.</td>
+  </tr>
+  <tr>
+   <td><code>manifest</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/html" title="Корневой элемент HTML-документа (&lt;html>). Все остальные элементы должны быть потомками этого элемента."><code>&lt;html&gt;</code></a></td>
+   <td>Задает URL кешированного манифеста документа.</td>
+  </tr>
+  <tr>
+   <td><code>max</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/progress" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;progress&gt;</code></a></td>
+   <td>Указывает максимальное допустимое значение.</td>
+  </tr>
+  <tr>
+   <td><code>maxlength</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Определяет максимальное количество символов, допустимых в элементе.</td>
+  </tr>
+  <tr>
+   <td><code>media</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/link" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;link&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/source" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;source&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/style" title="HTML-элемент &lt;style> содержит стилевую информацию для документа или его части. По умолчанию стилевые инструкции внутри этого элемента считаются написанными на CSS."><code>&lt;style&gt;</code></a></td>
+   <td>Задаёт подсказку медиа, для которой, связанный ресурс был спроектирован.</td>
+  </tr>
+  <tr>
+   <td><code>method</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a></td>
+   <td>Определяет, какой HTTP метод использовать, когда отправлются данные формы. Может быть GET (по умолчанию) или POST.</td>
+  </tr>
+  <tr>
+   <td><code>min</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a></td>
+   <td>Показывает минимальное допустимое значение.</td>
+  </tr>
+  <tr>
+   <td><code>multiple</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a></td>
+   <td>Показывает могут ли быть выбраны множественные значения в input типа email или file.</td>
+  </tr>
+  <tr>
+   <td><code>name</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/fieldset" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;fieldset&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/keygen" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;keygen&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/output" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;output&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/map" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;map&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/meta" title="Этот элемент включает в себя global attributes."><code>&lt;meta&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/param" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;param&gt;</code></a></td>
+   <td>Имя элемента. К примеру, используется сервером для определения полей отправленной формы.</td>
+  </tr>
+  <tr>
+   <td><code>novalidate</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a></td>
+   <td>Этот атрибут указывает, что форма не должна быть проверятся, когда передается на сервер.</td>
+  </tr>
+  <tr>
+   <td><code>open</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/details" title="HTML-элемент &lt;details> используется для раскрытия скрытой (дополнительной) информации."><code>&lt;details&gt;</code></a></td>
+   <td>Указывает, отображать ли детали при загрузки страницы.</td>
+  </tr>
+  <tr>
+   <td><code>optimum</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a></td>
+   <td>Указывает оптимальное числовое значение.</td>
+  </tr>
+  <tr>
+   <td><code>pattern</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td>Определяет регулярное выражение, которое будет проверять входные данные элемента.</td>
+  </tr>
+  <tr>
+   <td><code>ping</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>placeholder</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Предоставляет подсказку пользователю, касательно того, что можно ввести в поле.</td>
+  </tr>
+  <tr>
+   <td><code>poster</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>URL указывающий блок постера для показа, пока пользователь играет или ищет.</td>
+  </tr>
+  <tr>
+   <td><code>preload</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/audio" title="HTML &lt;audio> элемент используется для встраивания аудиоконтента в документы. Он может содрежать один или несколько аудио источников, представленным при помощи аттрибута src или при помощи &lt;source> элемента; браузер будет выбирать наиболее подходящий источник."><code>&lt;audio&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Указывает загружать ли ресурс целиком, его часть или не загружать вовсе.</td>
+  </tr>
+  <tr>
+   <td><code>pubdate</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/time" title="Элемент HTML &lt;time> используется для представления либо времени в 24-рехчасовом формате, либо точной даты по Григорианскому календарю (с опциональным указанием времени и часового пояса)."><code>&lt;time&gt;</code></a></td>
+   <td>Указывает, что эта дата и время являются ли датой ближайшего элемента предка <a href="/ru/docs/Web/HTML/Element/article" title="HTML элемент Article (&lt;article>) представляет самостоятельную часть документа, страницы, приложения или сайта, предназначенную для дальнейшего распространения или повторного использования. Этот элемент может представлять статью на форуме, статью в журнале или газете, запись в блоге или какой-либо другой самостоятельный фрагмент содержимого."><code>&lt;article&gt;</code></a>.</td>
+  </tr>
+  <tr>
+   <td><code>radiogroup</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/command" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;command&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>readonly</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Указывает, можно ли редактировать элемент.</td>
+  </tr>
+  <tr>
+   <td><code>rel</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/link" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;link&gt;</code></a></td>
+   <td>Задаёт отношение целевого объекта к объекту ссылки.</td>
+  </tr>
+  <tr>
+   <td><code>required</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Указывает, необходимо ли заполнять этот элемент или нет.</td>
+  </tr>
+  <tr>
+   <td><code>reversed</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/ol" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;ol&gt;</code></a></td>
+   <td>Указывает, отображать ли список по убыванию, вместо того, чтобы показывать его по возрастанию.</td>
+  </tr>
+  <tr>
+   <td><code>rows</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Определяет количество строк в textarea.</td>
+  </tr>
+  <tr>
+   <td><code>rowspan</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/td" title="HTML элемент &lt;td> определяет ячейку таблицы которая содержит данные. Участвует в табличной модели."><code>&lt;td&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/th" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;th&gt;</code></a></td>
+   <td>Определяет количество строк ячейки таблицы, которые следует охватывать.</td>
+  </tr>
+  <tr>
+   <td><code>sandbox</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>spellcheck</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Указывает, разрешена ли проверка правописания для этого элемента.</td>
+  </tr>
+  <tr>
+   <td><code>scope</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/th" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;th&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>scoped</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/style" title="HTML-элемент &lt;style> содержит стилевую информацию для документа или его части. По умолчанию стилевые инструкции внутри этого элемента считаются написанными на CSS."><code>&lt;style&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>seamless</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>selected</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/option" title="HTML элемент &lt;option> используется для определения пункта списка контейнера &lt;select>, элемента &lt;optgroup>, или элемента &lt;datalist>. Элемент &lt;option> может представлять раздел меню всплывающих окон и других перечней или списков HTML документа."><code>&lt;option&gt;</code></a></td>
+   <td>Определяет значение, которое будет выделено при загрузки страницы.</td>
+  </tr>
+  <tr>
+   <td><code>shape</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>size</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a></td>
+   <td>Определяет ширину элемента (в пикселях). Если у элемента значение атрибута <code>type</code> — <code>text</code> или <code>password</code>, тогда это количество символов.</td>
+  </tr>
+  <tr>
+   <td><code>sizes</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/link" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;link&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>span</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/col" title="Этот элемент позволяет стилизировать столбцы с использованием CSS, но только несколько атррибутов будут иметь эффект на столбец (смотри спецификацию CSS 2.1)."><code>&lt;col&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/colgroup" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;colgroup&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>src</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/audio" title="HTML &lt;audio> элемент используется для встраивания аудиоконтента в документы. Он может содрежать один или несколько аудио источников, представленным при помощи аттрибута src или при помощи &lt;source> элемента; браузер будет выбирать наиболее подходящий источник."><code>&lt;audio&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/embed" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;embed&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/script" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;script&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/source" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;source&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/track" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;track&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>URL встраиваемого содержимого.</td>
+  </tr>
+  <tr>
+   <td><code>srcdoc</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>srclang</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/track" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;track&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>srcset</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>start</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/ol" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;ol&gt;</code></a></td>
+   <td>Определяет первый номер, если это не 1.</td>
+  </tr>
+  <tr>
+   <td><code>step</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>style</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Определяет CSS стили, которые перепишут установленные ранее стили.</td>
+  </tr>
+  <tr>
+   <td><code>summary</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/table" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;table&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>tabindex</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Переписывает порядок Tab по умолчанию браузера и следует вместо него заданному.</td>
+  </tr>
+  <tr>
+   <td><code>target</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/base" title="HTML элемент &lt;base> определяет основной адрес (URL), используемый для всех относительных адресов (URLs) в документе. Может быть только один &lt;base> элемент в одном документе. 
+ Основной адрес (URL) документа можно запросить скриптом используя document.baseURI."><code>&lt;base&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>title</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Текст, который будет отображаться в всплывающей подсказке, когда на него наведут указатель.</td>
+  </tr>
+  <tr>
+   <td><code>type</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/command" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;command&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/embed" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;embed&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/script" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;script&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/source" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;source&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/style" title="HTML-элемент &lt;style> содержит стилевую информацию для документа или его части. По умолчанию стилевые инструкции внутри этого элемента считаются написанными на CSS."><code>&lt;style&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/menu" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;menu&gt;</code></a></td>
+   <td>Определяет тип элемента.</td>
+  </tr>
+  <tr>
+   <td><code>usemap</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>,  <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>value</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/option" title="HTML элемент &lt;option> используется для определения пункта списка контейнера &lt;select>, элемента &lt;optgroup>, или элемента &lt;datalist>. Элемент &lt;option> может представлять раздел меню всплывающих окон и других перечней или списков HTML документа."><code>&lt;option&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/li" title="HTML элемент  используется для создания элементов списка. Он также должен находиться в родительском элементе: нумерованном списоке (&lt;ol>), ненумерованном списоке (&lt;ul>), или меню (&lt;menu>). В меню и ненумерованых списках, элементы списка обычно отображаются с маркерами в виде круга. В нумерованых списках, они обычно отображаются с маркерами в виде восходящего счетчика слева, например числа или буквы."><code>&lt;li&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/progress" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;progress&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/param" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;param&gt;</code></a></td>
+   <td>Определяет значение элемента по умолчанию, которое будет отображаться после загрузки страницы.</td>
+  </tr>
+  <tr>
+   <td><code>width</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/canvas" title="HTML &lt;canvas> Элемент может быть использован для отрисовки графики через скрипты (обычно используется JavaScript). На пример, его можно использовать для отрисовки графиков, делать композиции фото или даже выполнять анимации. Вы можете (и должны) дать альтернативное содержание внури блока &lt;canvas>. Этот контент будет рендерится в обоих браузерах, в старых которые не поддерживают canvas и в браузерах с отключённым JavaScript."><code>&lt;canvas&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/embed" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;embed&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Примечание: в некоторых случаях, таких как <a href="/ru/docs/Web/HTML/Element/div" title='Элемент разделения контента HTML (&lt;div>) является базовым контейнером для элементов основного потока ( flow content ). Он не влияет на контент или формат пока не стилизован, используя CSS. Являясь "чистым" контейнером, элемент &lt;div> по своему существу не представляет ничего. Между тем, он используется для группировки контента, что позволяет легко его стилизовать, используя '><code>&lt;div&gt;</code></a>, это устаревший атрибут, в этом случае используйте свойство CSS <a href="/ru/docs/Web/CSS/width" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>width</code></a> вместо него. В других случаях, таких как <a href="/ru/docs/Web/HTML/Element/canvas" title="HTML &lt;canvas> Элемент может быть использован для отрисовки графики через скрипты (обычно используется JavaScript). На пример, его можно использовать для отрисовки графиков, делать композиции фото или даже выполнять анимации. Вы можете (и должны) дать альтернативное содержание внури блока &lt;canvas>. Этот контент будет рендерится в обоих браузерах, в старых которые не поддерживают canvas и в браузерах с отключённым JavaScript."><code>&lt;canvas&gt;</code></a>, ширина должна быть задана этим атрибутом.</td>
+  </tr>
+  <tr>
+   <td><code>wrap</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Указывает, следует ли переносить текст.</td>
+  </tr>
+ </tbody>
+ <tbody>
+  <tr>
+   <td><code>border</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/table" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;table&gt;</code></a></td>
+   <td>
+    <p>Ширина границы.</p>
+
+    <p>Примечание: это устаревший атрибут, используйте свойство CSS <a href="/ru/docs/Web/CSS/border" title="Свойство CSS border это  универсальное свойство для указания всех персональных свойств границ за раз: border-width, border-style, и border-color. Как и во всех универсальных свойствах, любое персональное значение, которое не указанно, устанавливается в начальное занчение. Обратите внимание, border не может быть использован для указания пользовательского значения border-image, но вместо этого устанавливает его в начальное значение, т.е. none."><code>border</code></a>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td><code>buffered</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/audio" title="HTML &lt;audio> элемент используется для встраивания аудиоконтента в документы. Он может содрежать один или несколько аудио источников, представленным при помощи аттрибута src или при помощи &lt;source> элемента; браузер будет выбирать наиболее подходящий источник."><code>&lt;audio&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Содержит отрезок времени уже буферизованного медиа.</td>
+  </tr>
+  <tr>
+   <td><code>challenge</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/keygen" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;keygen&gt;</code></a></td>
+   <td>Строка вызова, которая передаётся вместе с публичным ключом.</td>
+  </tr>
+  <tr>
+   <td><code>charset</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/meta" title="Этот элемент включает в себя global attributes."><code>&lt;meta&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/script" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;script&gt;</code></a></td>
+   <td>Определяет кодировку страницы или скрипта.</td>
+  </tr>
+  <tr>
+   <td><code>checked</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/command" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;command&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td>Указывает, следует ли отметить элемент при загрузки страницы.</td>
+  </tr>
+  <tr>
+   <td><code>cite</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/blockquote" title="HTML-элемент &lt;blockquote> (от англ. Block Quotation) указывает на то, что заключенный в нем текст является развернутой цитатой. Обычно он (текст) визуально выделяется наклонным (смотри Примечание, где говорится о том, как это изменить). URI на источник цитаты можно указать в атрибуте cite, тогда как текстовое представление источника может быть задано элементом &lt;cite>."><code>&lt;blockquote&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/del" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;del&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/ins" title="Элемент HTML &lt;ins> представляет собой диапазон текста, который был добавлен в документ"><code>&lt;ins&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/q" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;q&gt;</code></a></td>
+   <td>Содержит URI, который указывает на источник цитаты или изменения.</td>
+  </tr>
+  <tr>
+   <td><code>class</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Часто используется вместе с CSS, чтобы стилизовать элементы с общими свойствами.</td>
+  </tr>
+  <tr>
+   <td><code>code</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/applet" title="Элемент HTML апплет () определяет включение апплета java."><code>&lt;applet&gt;</code></a></td>
+   <td>Указывает URL файла класса аплета для загрузки и выполнения.</td>
+  </tr>
+  <tr>
+   <td><code>codebase</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/applet" title="Элемент HTML апплет () определяет включение апплета java."><code>&lt;applet&gt;</code></a></td>
+   <td>Этот атрибут предоставляет абсолютный или относительный URL директории,  файлы аплета .class, на которые ссылаются в хранимом атрибуте кода.</td>
+  </tr>
+  <tr>
+   <td><code>color</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/basefont" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;basefont&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/font" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;font&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/hr" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;hr&gt;</code></a></td>
+   <td>
+    <p>Этот атрибут устанавливает цвет текста, используя либо название цвета, либо шестнадцатиричный формат #RRGGBB.</p>
+
+    <p>Примечание: это устаревший атрибут. Используйте CSS свойство <a href="/ru/docs/Web/CSS/color" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>color</code></a>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td><code>cols</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Определяет количество столбцов в textarea.</td>
+  </tr>
+  <tr>
+   <td><code>colspan</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/td" title="HTML элемент &lt;td> определяет ячейку таблицы которая содержит данные. Участвует в табличной модели."><code>&lt;td&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/th" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;th&gt;</code></a></td>
+   <td>Определяет диапазон количества столбцов ячейки.</td>
+  </tr>
+  <tr>
+   <td><code>content</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/meta" title="Этот элемент включает в себя global attributes."><code>&lt;meta&gt;</code></a></td>
+   <td>Значение, ассоциированное с <code>http-equiv</code> или <code>name</code> зависит от контекста.</td>
+  </tr>
+  <tr>
+   <td><code>contenteditable</code></td>
+   <td>Глобальный атрибут/td>
+   <td>Указывает, редактируется ли содержимое элемента.</td>
+  </tr>
+  <tr>
+   <td><code>contextmenu</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Определяет ID элемента <a href="/ru/docs/Web/HTML/Element/menu" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;menu&gt;</code></a> который послужит, как контекстное меню элемента.</td>
+  </tr>
+  <tr>
+   <td><code>controls</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/audio" title="HTML &lt;audio> элемент используется для встраивания аудиоконтента в документы. Он может содрежать один или несколько аудио источников, представленным при помощи аттрибута src или при помощи &lt;source> элемента; браузер будет выбирать наиболее подходящий источник."><code>&lt;audio&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Указывает, следует ли отображать пользователю кнопки воспроизведения.</td>
+  </tr>
+  <tr>
+   <td><code>coords</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a></td>
+   <td>Набор значений, задающий координаты области для активного участка.</td>
+  </tr>
+  <tr>
+   <td>
+    <p><code>data</code></p>
+   </td>
+   <td>
+    <p><a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a></p>
+   </td>
+   <td>
+    <p>Задаёт URL ресурса.</p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p><code>data-*</code></p>
+   </td>
+   <td>
+    <p>Глобальный атрибут</p>
+   </td>
+   <td>
+    <p>Позволяет прикрепить произвольные атрибуты для HTML элемента.</p>
+   </td>
+  </tr>
+  <tr>
+   <td><code>datetime</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/del" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;del&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/ins" title="Элемент HTML &lt;ins> представляет собой диапазон текста, который был добавлен в документ"><code>&lt;ins&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/time" title="Элемент HTML &lt;time> используется для представления либо времени в 24-рехчасовом формате, либо точной даты по Григорианскому календарю (с опциональным указанием времени и часового пояса)."><code>&lt;time&gt;</code></a></td>
+   <td>Указывает дату и время, ассоциированное с элементом.</td>
+  </tr>
+  <tr>
+   <td><code>default</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/track" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;track&gt;</code></a></td>
+   <td>Указывает, что дорожка должна быть доступна, если пользовательские настройки не говорят об обратном.</td>
+  </tr>
+  <tr>
+   <td><code>defer</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/script" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;script&gt;</code></a></td>
+   <td>Указывает, что скрипт должен быть запущен, после того как страница будет проанализирована.</td>
+  </tr>
+  <tr>
+   <td><code>dir</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Определяет направление текста. Допустимые значения ltr (Слева направо) или rtl (Справа налево).</td>
+  </tr>
+  <tr>
+   <td><code>dirname</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><code>disabled</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/command" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;command&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/fieldset" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;fieldset&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/keygen" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;keygen&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/optgroup" title="HTML-элемент &lt;optgroup> позволяет группировать опции, находящиеся внутри элемента &lt;select>."><code>&lt;optgroup&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/option" title="HTML элемент &lt;option> используется для определения пункта списка контейнера &lt;select>, элемента &lt;optgroup>, или элемента &lt;datalist>. Элемент &lt;option> может представлять раздел меню всплывающих окон и других перечней или списков HTML документа."><code>&lt;option&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Указывает, может ли пользователь взаимодействовать с элементом.</td>
+  </tr>
+  <tr>
+   <td><code>download</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/a" title="HTML-элемент &lt;a> определяет гиперссылку для перехода на определённое место на странице или на другую страницу в Интернете. Также он может быть использован (в устаревшем варианте) для создания якоря — это место назначения для гиперссылок внутри страницы: так ссылки не ограничены только в перемещении между страницами."><code>&lt;a&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a></td>
+   <td>Указывает, что ссылка используется для загрузки.</td>
+  </tr>
+  <tr>
+   <td><code>draggable</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Определяет, можно ли перетаскивать элемент.</td>
+  </tr>
+  <tr>
+   <td><code>dropzone</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Указывает, что элемент принимает содержимое элемента, которое перетаскивают на него.</td>
+  </tr>
+  <tr>
+   <td><code>enctype</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a></td>
+   <td>Определяет тип содержимого для данных формы, когда <code>method</code> — POST.</td>
+  </tr>
+  <tr>
+   <td><code>for</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/label" title="HTML элемент &lt;label> представляет собой подпись к элементу пользовательского интерфейса."><code>&lt;label&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/output" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;output&gt;</code></a></td>
+   <td>Описывает элементы, которые принадлежат им.</td>
+  </tr>
+  <tr>
+   <td><code>form</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/fieldset" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;fieldset&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/keygen" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;keygen&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/label" title="HTML элемент &lt;label> представляет собой подпись к элементу пользовательского интерфейса."><code>&lt;label&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/meter" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;meter&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/output" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;output&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/progress" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;progress&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>Указывает форму, которая является владельцем элемента.</td>
+  </tr>
+  <tr>
+   <td><code>formaction</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a></td>
+   <td>Указывает действие элемента, перезаписвающее действие, указанное в форме <a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a>.</td>
+  </tr>
+  <tr>
+   <td><code>headers</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/td" title="HTML элемент &lt;td> определяет ячейку таблицы которая содержит данные. Участвует в табличной модели."><code>&lt;td&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/th" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;th&gt;</code></a></td>
+   <td>ID элементов <code>&lt;th&gt;</code>, которые применяются к этому элементу.</td>
+  </tr>
+  <tr>
+   <td><code>height</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/canvas" title="HTML &lt;canvas> Элемент может быть использован для отрисовки графики через скрипты (обычно используется JavaScript). На пример, его можно использовать для отрисовки графиков, делать композиции фото или даже выполнять анимации. Вы можете (и должны) дать альтернативное содержание внури блока &lt;canvas>. Этот контент будет рендерится в обоих браузерах, в старых которые не поддерживают canvas и в браузерах с отключённым JavaScript."><code>&lt;canvas&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/embed" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;embed&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/object" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;object&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Примечание: в некоторых экземплярах, таких как <a href="/ru/docs/Web/HTML/Element/div" title='Элемент разделения контента HTML (&lt;div>) является базовым контейнером для элементов основного потока ( flow content ). Он не влияет на контент или формат пока не стилизован, используя CSS. Являясь "чистым" контейнером, элемент &lt;div> по своему существу не представляет ничего. Между тем, он используется для группировки контента, что позволяет легко его стилизовать, используя '><code>&lt;div&gt;</code></a>, это устаревший атрибут, в этом случае используйте свойство CSS <a href="/ru/docs/Web/CSS/height" title="CSS атрибут height позволят обозначать высоту элемента (без padding, border, margin)."><code>height</code></a>. В других экземплярах, таких как <a href="/ru/docs/Web/HTML/Element/canvas" title="HTML &lt;canvas> Элемент может быть использован для отрисовки графики через скрипты (обычно используется JavaScript). На пример, его можно использовать для отрисовки графиков, делать композиции фото или даже выполнять анимации. Вы можете (и должны) дать альтернативное содержание внури блока &lt;canvas>. Этот контент будет рендерится в обоих браузерах, в старых которые не поддерживают canvas и в браузерах с отключённым JavaScript."><code>&lt;canvas&gt;</code></a>, высота должна быть задана этим атрибутом.</td>
+  </tr>
+ </tbody>
+ <tbody>
+  <tr>
+   <td><code>accept</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td>Список типов, которые принимает сервер, обычно тип файла.</td>
+  </tr>
+  <tr>
+   <td><code>accept-charset</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a></td>
+   <td>Список поддерживаемых наборов символов.</td>
+  </tr>
+  <tr>
+   <td><code>accesskey</code></td>
+   <td>Глобальный атрибут</td>
+   <td>Определяет клавишную комбинацию для активизации или добавления фокуса к элементу.</td>
+  </tr>
+  <tr>
+   <td><code>action</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a></td>
+   <td>URI адрес программы, которая обработает данные, переданные через форму.</td>
+  </tr>
+  <tr>
+   <td><code>align</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/applet" title="Элемент HTML апплет () определяет включение апплета java."><code>&lt;applet&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/caption" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;caption&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/col" title="Этот элемент позволяет стилизировать столбцы с использованием CSS, но только несколько атррибутов будут иметь эффект на столбец (смотри спецификацию CSS 2.1)."><code>&lt;col&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/colgroup" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;colgroup&gt;</code></a>,  <a href="/ru/docs/Web/HTML/Element/hr" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;hr&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/iframe" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;iframe&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/table" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;table&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/tbody" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;tbody&gt;</code></a>,  <a href="/ru/docs/Web/HTML/Element/td" title="HTML элемент &lt;td> определяет ячейку таблицы которая содержит данные. Участвует в табличной модели."><code>&lt;td&gt;</code></a>,  <a href="/ru/docs/Web/HTML/Element/tfoot" title="HTML элемент подвала таблицы (&lt;tfoot>) определяющий набор строк суммирующих столбцы таблицы."><code>&lt;tfoot&gt;</code></a> , <a href="/ru/docs/Web/HTML/Element/th" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;th&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/thead" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;thead&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/tr" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;tr&gt;</code></a></td>
+   <td>Задаёт горизонтальное выравнивание элемента.</td>
+  </tr>
+  <tr>
+   <td><code>alt</code></td>
+   <td>
+    <p><a href="/ru/docs/Web/HTML/Element/applet" title="Элемент HTML апплет () определяет включение апплета java."><code>&lt;applet&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/area" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;area&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/img" title="&lt;img> — элемент HTML, предназначенный для описания изображений."><code>&lt;img&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></p>
+   </td>
+   <td>Альтернативный текст, в случае, если изображение не может быть отображено.</td>
+  </tr>
+  <tr>
+   <td><code>async</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/script" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;script&gt;</code></a></td>
+   <td>Указывает, что скрипт должен быть выполнен асинхронно.</td>
+  </tr>
+  <tr>
+   <td><code>autocomplete</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/form" title="Элемент HTML form (&lt;form>) представляет секцию документа, содержащую интерактивные элементы управления, которые позволяют пользователю отправлять информацию на веб-сервер."><code>&lt;form&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td>Показывает, могут ли управляющие элементы в форме по умолчанию имет собственные значения для автодополнения в форме.</td>
+  </tr>
+  <tr>
+   <td><code>autofocus</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/button" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;button&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/keygen" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;keygen&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/select" title="HTML тэг &lt;select> представляет собой элемент управления который содержит меню опций:"><code>&lt;select&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/textarea" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;textarea&gt;</code></a></td>
+   <td>На этом элементе следует автоматически сфокусироваться после загрузки страницы.</td>
+  </tr>
+  <tr>
+   <td><code>autoplay</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/audio" title="HTML &lt;audio> элемент используется для встраивания аудиоконтента в документы. Он может содрежать один или несколько аудио источников, представленным при помощи аттрибута src или при помощи &lt;source> элемента; браузер будет выбирать наиболее подходящий источник."><code>&lt;audio&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/video" title="Для встраивания видео контента в документ используйте элемент HTML &lt;video>. Видео элемент может содержать один или несколько источников видео. Чтобы указать источник видео, необходимо использовать атрибут src или элемент &lt;source>; браузер сам определит наиболее подходящий источник."><code>&lt;video&gt;</code></a></td>
+   <td>Аудио и видео нужно воспроизвести как можно скорее.</td>
+  </tr>
+  <tr>
+   <td><code>autosave</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/input" title="Элемент HTML &lt;input> используется для создания интерактивных элементов управления в веб-формах."><code>&lt;input&gt;</code></a></td>
+   <td>Предыдущее значения следует сохранить в выпадающем списке при загрузки страницы.</td>
+  </tr>
+  <tr>
+   <td><code>bgcolor</code></td>
+   <td><a href="/ru/docs/Web/HTML/Element/body" title="Элемент  представляет собой контекст HTML документа. В HTML документе может быть только один элемент ."><code>&lt;body&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/col" title="Этот элемент позволяет стилизировать столбцы с использованием CSS, но только несколько атррибутов будут иметь эффект на столбец (смотри спецификацию CSS 2.1)."><code>&lt;col&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/colgroup" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;colgroup&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/marquee" title="HTML-элемент &lt;marquee> используется для создания на странице прокручивающегося текста (бегущей строки)."><code>&lt;marquee&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/table" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;table&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/tbody" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;tbody&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/tfoot" title="HTML элемент подвала таблицы (&lt;tfoot>) определяющий набор строк суммирующих столбцы таблицы."><code>&lt;tfoot&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/td" title="HTML элемент &lt;td> определяет ячейку таблицы которая содержит данные. Участвует в табличной модели."><code>&lt;td&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/th" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;th&gt;</code></a>, <a href="/ru/docs/Web/HTML/Element/tr" title="Документация об этом ещё не написана; пожалуйста, поспособствуйте её написанию!" class="new" rel="nofollow"><code>&lt;tr&gt;</code></a></td>
+   <td>
+    <p>Цвет фона элемента.</p>
+
+    <p>Примечание: это устаревший атрибут. Используйте свойство CSS <a href="/ru/docs/Web/CSS/background-color" title="CSS-свойство background-color CSS устанавливает цвет фона элемента, принимая либо цветовое значение, либо специальное значение transparent."><code>background-color</code></a>.</p>
+   </td>
+  </tr>
+ </tbody>
+</table>
+</div>
+       </div>  
+        <div class="card-footer" style="overflow: auto">
+            <div class="h5 text-gray">
+                Источники:
+            </div>
+            <ul>
+              <li>
+                http://monetavinternete.ru/sozdaem-sajt-s-nulya/osnovy-html/chto-takoe-html-tegi-i-atributy-validator-validator-w3c-struktura-i-pravila-napisaniya-tegov/
+              </li>
+              <li>
+                https://developer.mozilla.org/ru/docs/Web/HTML/Attributes
+              </li>
+            </ul>
+        </div>
+        <div class="card-footer col-12 center">
+            <a href="spravoch.html">
+                <button class="btn btn-primary col-11" style="margin-bottom: 10%">
+                    Назад в справочник
+                </button>
+           </a>
+        </div>
+    
+    <script>
+        var menu = document.querySelector('.menu')
+        var menuBtn = document.querySelector('.menu-btn')
+
+        menuBtn.onclick = function() {
+            menu.style.top = '0'
+        }
+
+        menu.onclick = function() {
+            menu.style.top = '-30%'
+        }
+
+    </script>  
+</body>
+</html>
